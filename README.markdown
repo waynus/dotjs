@@ -1,30 +1,29 @@
 ..................... dotjs ........................
 
-dotjs  is a  Google Chrome  extension  that executes
-JavaScript files in `~/.js` based on their filename.
+dotjs is a Google Chrome extension that executes
+JavaScript files in `/scripts` based on their filename.
 
-If  you navigate to  `http://www.google.com/`, dotjs
-will execute `~/.js/google.com.js`.
+If you navigate to `http://www.google.com/`, dotjs
+will execute `/scripts/google.com.js`.
 
-This makes it super  easy to spruce up your favorite
+This makes it super easy to spruce up your favorite
 pages using JavaScript.
 
-Bonus:  files  in `~/.js`  have jQuery 1.6.2 loaded,
-regardless  of  whether  the  site  you're  hacking
+Bonus: files in `/scripts` have jQuery 1.7 loaded,
+regardless of whether the site you're hacking
 uses jQuery.
 
-Double bonus: `~/.js/default.js`  is loaded on every
-request,  meaning you  can stick  plugins  or helper
+Double bonus: `/scripts/default.js` is loaded on every
+request, meaning you can stick plugins or helper
 functions in it.
 
 GreaseMonkey user scripts are great, but you need to
-publish them  somewhere and re-publish  after making
+publish them somewhere and re-publish after making
 modifications. With dotjs, just add or edit files in
-`~/.js`.
+`/scripts`.
 
 ## Example
 
-    $ cat ~/.js/github.com.js
     // swap github logo with trollface
     $('#header .logo img')
       .css('width', '100px')
@@ -35,59 +34,44 @@ modifications. With dotjs, just add or edit files in
 
 ## How It Works
 
-Chrome extensions can't access the local filesystem,
-so dotjs  runs a tiny  web server on port  3131 that
-serves files out of ~/.js.
+The dotjs extension makes [ajax](http://api.jquery.com/category/ajax) requests
+to /scripts/convore.com.js any time you hit a page on
+convore.com, for example, and executes the
+returned JavaScript.
 
-You don't  have to worry about  starting or stopping
-this web server because  we put a pretty great plist
-into  ~/Library/LaunchAgents that  handles  all that
-for us.
+Unlike the original dotjs, this one does not run an own
+local filesystem, so all files are located within the
+extensions' own directory.
 
-The dotjs Chrome extension then makes ajax requests
-to http://localhost:3131/convore.com.js any time you
-hit a page on convore.com, for example, and executes
-the returned JavaScript.
+By going to the option page, you will be met with a link
+to the extension directory which `/scripts` are in.
+
+You can then make a shortcut to that directory if you'd like.
 
 ## Requires
 
-- OS X
-- Ruby 1.8
-- rake (gem install rake)
-- Google Chrome
-- `/usr/local/bin` in your $PATH
+- Google Chrome / Chromium
 
 ## Install it
 
-    git clone http://github.com/defunkt/dotjs
-    cd dotjs
-    rake install
+Click on the `dotjs.crx` file and choose "View Raw".
 
-## Chromium vs Google Chrome
-
-Multiple Chromes installed? Drag builds/dotjs.crx to
-whichever is your favorite.
+You can then choose to install the extension to Chrome.
 
 ## Uninstall it
 
-    rake uninstall
+You unstall it like any normal extension
 
 ## Credits
 
 - Icon: <http://raphaeljs.com/icons/>
 - jQuery: <http://jquery.com/>
-- Ryan Tomayko for:
-
-> "I almost wish you could just
-   stick JavaScript in ~/.js. Do
-   you know what I'm saying?"
+- Chris Wanstrath (defunkt): dotjs
 
 ## Linux
 
 - [dotjs-ubuntu](https://github.com/glenbot/dotjs-ubuntu)
 
-## Other Browers
+## OS X
 
-- [Firefox Add-on](https://github.com/rlr/dotjs-addon)
-- [Safari Extension](https://github.com/wfarr/dotjs.safariextension)
-- [Fluid UserScript](https://github.com/sj26/dotjs-fluid)
+- [dotjs](https://github.com/defunkt/dotjs)
