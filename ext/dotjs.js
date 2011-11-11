@@ -14,6 +14,6 @@ $.ajax({
 	done: function(data){
 		$(function(){
 			eval(data);
-		}
+		})
 	}
 })
