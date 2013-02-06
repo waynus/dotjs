@@ -53,17 +53,8 @@ to the `/scripts` directory.
 
 ## Install it
 
-Download the extension by locating the `dotjs.crx`
-file from within the builds directory and choose
-"View Raw".
-
-Then all you have to do is to open up the extension
-window from the settings, drag n' drop the crx
-file here.
-
-## Uninstall it
-
-You uninstall it like any normal extension.
+The extension is found at Google Market:
+<http://bit.ly/dotjs-win>
 
 ## Credits
 
