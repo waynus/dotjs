@@ -9,13 +9,13 @@ will execute `/scripts/google.com.js`.
 This makes it super easy to spruce up your favorite
 pages using JavaScript.
 
-Bonus: files in `/scripts` have jQuery 1.7 loaded,
+Bonus: files in `/scripts` have jQuery 1.9 loaded,
 regardless of whether the site you're hacking
 uses jQuery.
 
-Double bonus: `/scripts/default.js` is loaded on every
-request, meaning you can stick plugins or helper
-functions in it.
+Double bonus: `/scripts/default.js` is loaded on
+every request, meaning you can stick plugins or
+helper functions in it.
 
 GreaseMonkey user scripts are great, but you need to
 publish them somewhere and re-publish after making
@@ -25,53 +25,64 @@ modifications. With dotjs, just add or edit files in
 ## Example
 
     // swap github logo with trollface
-    $('#header .logo img')
-      .css('width', '100px')
-      .css('margin-top', '-15px')
-      .attr('src', '//bit.ly/ghD24e')
+    $('a.header-logo-blacktocat').html(
+        $('<img>')
+            .attr('src', '//bit.ly/ghD24e')
+            .css({'width': 'auto', 'height': '22px'})
+        );
 
-![](https://bit.ly/gAHTbC)
+![](http://puu.sh/1Kjvw)
 
 ## How It Works
 
-The dotjs extension makes [ajax](http://api.jquery.com/category/ajax) requests
-to /scripts/convore.com.js any time you hit a page on
-convore.com, for example, and executes the
+The extension makes [ajax](http://api.jquery.com/category/ajax) requests to
+`/scripts/youtube.com.js` any time you hit a page
+on youtube.com, for example, and executes the
 returned JavaScript.
 
-Unlike the original dotjs, this one does not run an own
-local filesystem, so all files are located within the
-extensions' own directory.
+Unlike the original dotjs, thsi one does not run an
+own local fileserver, so all the files are located
+within the extension's own directory.
 
-By going to the option page, you will be met with a link
-to the extension directory which `/scripts` are in.
-
-You can then make a shortcut to that directory if you'd like.
+By going to the options you will be met with a link
+to the `/scripts` directory.
 
 ## Requires
 
-- Google Chrome / Chromium
+- Google Chrome
 
 ## Install it
 
-Click on the `dotjs.crx` file and choose "View Raw".
+Download the extension by locating the `dotjs.crx`
+file from within the builds directory and choose
+"View Raw".
 
-You can then choose to install the extension to Chrome.
+Then all you have to do is to open up the extension
+window from the settings, drag n' drop the crx
+file here.
 
 ## Uninstall it
 
-You unstall it like any normal extension
+You uninstall it like any normal extension.
 
 ## Credits
 
 - Icon: <http://raphaeljs.com/icons/>
 - jQuery: <http://jquery.com/>
-- Chris Wanstrath (defunkt): dotjs
+- Original: [Chris Wanstrath (defunkt)](https://github.com/defunkt)
+- Ryan Tomayko for:
 
-## Linux
+> "I almost wish you could just
+   stick JavaScript in ~/.js. Do
+   you know what I'm saying?"
+
+## Other versions
 
 - [dotjs-ubuntu](https://github.com/glenbot/dotjs-ubuntu)
-
-## OS X
-
 - [dotjs](https://github.com/defunkt/dotjs)
+
+## Other browsers
+
+- [Firefox Add-on](https://github.com/rlr/dotjs-addon)
+- [Safari Extension](https://github.com/wfarr/dotjs.safariextension)
+- [Fluid UserScript](https://github.com/sj26/dotjs-fluid)
