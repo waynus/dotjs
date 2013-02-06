@@ -1,5 +1,5 @@
 $.ajax({
-	url: chrome.extension.getURL('scripts/' + window.location.host.replace('www.', '') + '.js'),
+	url: chrome.extension.getURL('scripts/' + location.hostname.replace(/^www\./, '') + '.js'),
 	dataType: 'text',
 	success: function(data){
 		$(function(){
