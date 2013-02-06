@@ -1,20 +1,20 @@
-..................... dotjs ........................
-
+# ~/.js
 dotjs is a Google Chrome extension that executes
-JavaScript files in `/scripts` based on their filename.
+JavaScript files on websites based on their filename.
+The JavaScript files are loaded from the extension's
+directory within the browser.
 
-If you navigate to `http://www.google.com/`, dotjs
+Example: If you navigate to `www.google.com`, dotjs
 will execute `/scripts/google.com.js`.
 
 This makes it super easy to spruce up your favorite
 pages using JavaScript.
 
-Bonus: files in `/scripts` have jQuery 1.9 loaded,
-regardless of whether the site you're hacking
-uses jQuery.
+Bonus: All files have jQuery 1.9 loaded, regardless
+of whether the site you're hacking uses jQuery.
 
 Double bonus: `/scripts/default.js` is loaded on
-every request, meaning you can stick plugins or
+every site, meaning you can stick plugins or
 helper functions in it.
 
 GreaseMonkey user scripts are great, but you need to
@@ -24,34 +24,29 @@ modifications. With dotjs, just add or edit files in
 
 ## Example
 
-    // swap github logo with trollface
-    $('a.header-logo-blacktocat').html(
-        $('<img>')
-            .attr('src', '//bit.ly/ghD24e')
-            .css({'width': 'auto', 'height': '22px'})
-        );
+    // swap google logo with trollface
+    $('img.hplogo').
+        .attr('src', '//bit.ly/ghD24e')
+        .css({'width': 'auto'})
+    );
 
-![](http://puu.sh/1Kjvw)
+![](http://i.imgur.com/vZ3aIT5.png)
 
 ## How It Works
 
 The extension makes [ajax](http://api.jquery.com/category/ajax) requests to
-`/scripts/youtube.com.js` any time you hit a page
-on youtube.com, for example, and executes the
+`/scripts/google.com.js` any time you hit a page
+on google.com, for example, and executes the
 returned JavaScript.
 
-Unlike the original dotjs, thsi one does not run an
-own local fileserver, so all the files are located
+Unlike the original dotjs, this version does not run
+it's own local fileserver, so all the files are located
 within the extension's own directory.
 
 By going to the options you will be met with a link
 to the `/scripts` directory.
 
-## Requires
-
-- Google Chrome
-
-## Install it
+## Install
 
 The extension is found at Google Market:
 <http://bit.ly/dotjs-win>
