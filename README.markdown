@@ -48,8 +48,7 @@ to the `/scripts` directory.
 
 ## Install
 
-The extension is found at Google Market:
-<http://bit.ly/dotjs-win>
+[<img src='https://developers.google.com/chrome/web-store/images/branding/ChromeWebStore_BadgeWBorder_v2_206x58.png'>](http://bit.ly/dotjs-win)
 
 ## Credits
 
