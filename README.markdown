@@ -25,10 +25,9 @@ modifications. With dotjs, just add or edit files in
 ## Example
 
     // swap google logo with trollface
-    $('img.hplogo').
-        .attr('src', '//bit.ly/ghD24e')
-        .css({'width': 'auto'})
-    );
+    $('img#hplogo').attr('src', '//bit.ly/ghD24e')
+    $('img#hplogo').css({'width': 'auto'})
+
 
 ![](http://i.imgur.com/vZ3aIT5.png)
 
