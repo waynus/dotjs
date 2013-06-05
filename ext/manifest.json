@@ -1,6 +1,7 @@
 {
 	"name": "dotjs for windows",
 	"manifest_version": 2,
+	"minimum_chrome_version": "23",
 	"version": "1.1",
 	"description": "~/.js",
 	"icons": {"48": "icon48.png", "128": "icon128.png"},
@@ -13,5 +14,6 @@
 	}],
 	"permissions": [
 		"tabs"
-	]
+	],
+	"web_accessible_resources": ["scripts/*.js"]
 }
