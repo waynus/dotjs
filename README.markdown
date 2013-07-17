@@ -22,6 +22,9 @@ publish them somewhere and re-publish after making
 modifications. With dotjs, just add or edit files in
 `/scripts`.
 
+Triple bonus: You can just as easily load css files
+from `/styles` like so: `/styles/github.com.css`.
+
 ## Example
 
     // swap google logo with trollface
