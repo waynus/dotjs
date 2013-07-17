@@ -15,6 +15,5 @@
 		"matches": ["http://*/*", "https://*/*"],
 		"js": ["jquery.js", "dotjs.js"]
 	}],
-	"permissions": ["http://*/*", "https://*/*"],
-	"web_accessible_resources": ["scripts/*.js"]
+	"web_accessible_resources": ["scripts/*.js", "styles/*.css"]
 }
