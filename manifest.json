@@ -12,7 +12,7 @@
 	"content_scripts": [{
 		"all_frames": true,
 		"run_at": "document_end",
-		"matches": ["http://*/*", "https://*/*"],
+		"matches": ["http*://*/*"],
 		"js": ["jquery.js", "dotjs.js"]
 	}],
 	"web_accessible_resources": ["scripts/*.js", "styles/*.css"]
