@@ -23,7 +23,7 @@ xhr.onload = function(){
 	if(system.indexOf('Win') != -1)
 		path = path.replace(/\//g, '\\\\');
 
-	var link = document.getElementById('link');
+	var link = document.querySelector('input');
 	link.value = path;
 	link.focus();
 	link.select();
