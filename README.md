@@ -50,7 +50,7 @@ to the `/scripts` directory.
 
 ## Install
 
-[<img src='https://developers.google.com/chrome/web-store/images/branding/ChromeWebStore_BadgeWBorder_v2_206x58.png'>](http://bit.ly/dotjs-win)
+[<img src='https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png'>](http://bit.ly/dotjs-win)
 
 ## Credits
 
