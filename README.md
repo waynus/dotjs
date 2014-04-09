@@ -1,29 +1,18 @@
 # ~/.js
-dotjs is a Google Chrome extension that executes
-JavaScript files on websites based on their filename.
-The JavaScript files are loaded from the extension's
-directory within the browser.
 
-Example: If you navigate to `www.google.com`, dotjs
-will execute `/scripts/google.com.js`.
+[dotjs-universal](https://github.com/p3lim/dotjs-universal) is a Chrome/Chromium browser extension that executes JavaScript and CSS files on websites based on their filename.
 
-This makes it super easy to spruce up your favorite
-pages using JavaScript.
+Unlike the original, this version does not run it's own local fileserver, all the files are located within the extension's own directory instead, so it'll work on any system!
 
-Bonus: All files have jQuery 1.9 loaded, regardless
-of whether the site you're hacking uses jQuery.
+If you navigate to `www.google.com`, dotjs will execute `/scripts/google.com.js` and/or `/styles/google.com.css` if either of the files exist.
 
-Double bonus: `/scripts/default.js` is loaded on
-every site, meaning you can stick plugins or
-helper functions in it.
+This makes it super easy to spruce up your favorite pages using JavaScript or CSS.
 
-GreaseMonkey user scripts are great, but you need to
-publish them somewhere and re-publish after making
-modifications. With dotjs, just add or edit files in
-`/scripts`.
+Bonus: All files have jQuery 2.1 loaded, regardless of whether the site you're hacking uses jQuery.
 
-Triple bonus: You can just as easily load css files
-from `/styles` like so: `/styles/github.com.css`.
+Double bonus: `/scripts/default.js` is loaded on every site, meaning you can stick plugins or helper functions in it.
+
+Triple bonus: By going to the extension options you will be presented by the absolute path to the scripts and styles directory.
 
 ## Example
 
@@ -31,37 +20,20 @@ from `/styles` like so: `/styles/github.com.css`.
     $('img#hplogo').attr('src', '//bit.ly/ghD24e')
     $('img#hplogo').css({'width': 'auto'})
 
-
 ![](http://i.imgur.com/vZ3aIT5.png)
-
-## How It Works
-
-The extension makes [ajax](http://api.jquery.com/category/ajax) requests to
-`/scripts/google.com.js` any time you hit a page
-on google.com, for example, and executes the
-returned JavaScript.
-
-Unlike the original dotjs, this version does not run
-it's own local fileserver, so all the files are located
-within the extension's own directory.
-
-By going to the options you will be met with a link
-to the `/scripts` directory.
 
 ## Install
 
-[<img src='https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png'>](http://bit.ly/dotjs-win)
+[<img src='https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png'>](http://bit.ly/dotjs-universal)
 
 ## Credits
 
 - Icon: <http://raphaeljs.com/icons/>
 - jQuery: <http://jquery.com/>
-- Original: [Chris Wanstrath (defunkt)](https://github.com/defunkt)
+- Original: [Chris Wanstrath](https://github.com/defunkt)
 - Ryan Tomayko for:
 
-> "I almost wish you could just
-   stick JavaScript in ~/.js. Do
-   you know what I'm saying?"
+> "I almost wish you could just stick JavaScript in ~/.js. Do you know what I'm saying?"
 
 ## Other versions
 
