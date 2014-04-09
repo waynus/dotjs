@@ -18,14 +18,16 @@ var xhr = new XMLHttpRequest();
 xhr.open('GET', 'manifest.json');
 xhr.onload = function(){
 	var manifest = JSON.parse(xhr.responseText);
-	path += '/' + manifest.version + '_0/scripts';
+	path += '/' + manifest.version + '_0/';
 
 	if(system.indexOf('Win') != -1)
 		path = path.replace(/\//g, '\\\\');
 
-	var link = document.querySelector('input');
-	link.value = path;
-	link.focus();
-	link.select();
+	var scripts = document.querySelector('.scripts');
+	scripts.value = path + 'scripts';
+	scripts.focus();
+	scripts.select();
+
+	document.querySelector('.styles').value = path + 'styles';
 }
 xhr.send(null);
