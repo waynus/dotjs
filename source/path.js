@@ -6,7 +6,7 @@ else
 
 var system = navigator.platform;
 if(system.indexOf('Win') != -1)
-	path = 'C:/Users/%USERNAME%/AppData/Local/' + type + '/User Data';
+	path = '%LOCALAPPDATA%/' + type + '/User Data';
 else if(system.indexOf('Linux') != -1)
 	path = '~/.config/' + type.toLowerCase().replace(/\//, '-');
 else if(system.indexOf('Mac') != -1)
