@@ -17,8 +17,10 @@ Triple bonus: By going to the extension options you will be presented by the abs
 ## Example
 
     // swap google logo with trollface
-    $('img#hplogo').attr('src', '//bit.ly/ghD24e')
-    $('img#hplogo').css({'width': 'auto'})
+    $('#hplogo').css({
+        background: 'url(//bit.ly/ghD24e) no-repeat',
+        backgroundSize: 'auto 95px'
+    });
 
 ![](http://i.imgur.com/vZ3aIT5.png)
 
