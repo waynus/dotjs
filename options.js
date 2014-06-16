@@ -21,7 +21,7 @@ xhr.onload = function(){
 	path += '/' + manifest.version + '_0/';
 
 	if(system.indexOf('Win') != -1)
-		path = path.replace(/\//g, '\\\\');
+		path = path.replace(/\//g, '\\');
 
 	var scripts = document.querySelector('.scripts');
 	scripts.value = path + 'scripts';
