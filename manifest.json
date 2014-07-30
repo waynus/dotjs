@@ -10,7 +10,6 @@
 	},
 	"options_page": "options.html",
 	"content_scripts": [{
-		"all_frames": true,
 		"run_at": "document_end",
 		"matches": ["http://*/*", "https://*/*"],
 		"js": ["jquery.js", "dotjs.js"]
