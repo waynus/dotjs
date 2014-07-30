@@ -1,28 +1,14 @@
 var hostname = location.hostname.replace(/^www\./, '')
 
-$.ajax({
-	url: chrome.extension.getURL('styles/' + hostname + '.css'),
-	dataType: 'text',
-	success: function(data){
-		var stylesheet = document.createElement('style');
-		stylesheet.type = 'text/css';
-		stylesheet.innerHTML = data;
-		document.body.appendChild(stylesheet);
-	}
-})
+var link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = chrome.extension.getURL('styles/' + hostname + '.css');
+document.documentElement.insertBefore(link);
 
-$.ajax({
-	url: chrome.extension.getURL('scripts/' + hostname + '.js'),
-	dataType: 'text',
-	success: function(data){
-		eval(data);
-	},
-});
+var script = document.createElement('script');
+script.src = chrome.extension.getURL('scripts/' + hostname + '.js');
+document.documentElement.insertBefore(script);
 
-$.ajax({
-	url: chrome.extension.getURL('scripts/default.js'),
-	dataType: 'text',
-	success: function(data){
-		eval(data);
-	},
-});
+var defaultScript = document.createElement('script');
+defaultScript.src = chrome.extension.getURL('scripts/default.js');
+document.documentElement.insertBefore(defaultScript);
