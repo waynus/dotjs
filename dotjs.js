@@ -1,4 +1,4 @@
-var hostname = location.hostname.replace(/^www\./, '')
+var hostname = location.hostname.replace(/^www\./, '');
 
 var style = document.createElement('link');
 style.rel = 'stylesheet';
