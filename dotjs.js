@@ -1,19 +1,23 @@
 var hostname = location.hostname.replace(/^www\./, '');
 
-var style = document.createElement('link');
-style.rel = 'stylesheet';
-style.href = chrome.extension.getURL('styles/' + hostname + '.css');
-document.documentElement.appendChild(style);
+var appendScript = function(path){
+	var xhr = new XMLHttpRequest();
+	xhr.onload = function(){
+		eval(this.responseText);
+	}
+	xhr.open('GET', chrome.extension.getURL(path));
+	xhr.send();
+}
 
 var defaultStyle = document.createElement('link');
 defaultStyle.rel = 'stylesheet';
 defaultStyle.href = chrome.extension.getURL('styles/default.css');
-document.documentElement.appendChild(defaultStyle);
+document.head.appendChild(defaultStyle);
 
-var script = document.createElement('script');
-script.src = chrome.extension.getURL('scripts/' + hostname + '.js');
-document.documentElement.appendChild(script);
+var style = document.createElement('link');
+style.rel = 'stylesheet';
+style.href = chrome.extension.getURL('styles/' + hostname + '.css');
+document.head.appendChild(style);
 
-var defaultScript = document.createElement('script');
-defaultScript.src = chrome.extension.getURL('scripts/default.js');
-document.documentElement.appendChild(defaultScript);
+appendScript('scripts/default.js');
+appendScript('scripts/' + hostname + '.js');
