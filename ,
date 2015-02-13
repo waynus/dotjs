@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<meta name="title" content="BT Wi-fi">
+<meta name="robots" content="index, follow">
+<meta name="description" content="The worlds largest Wi-fi Community">
+<meta name="keywords" content="fon, fonera, internet, wifi, wireless, inalambrico, wi-fi, inalambrica">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>BT | WIFI</title>
+<!--<link rel="shortcut icon" href="https://www.btfon.com/favicon.ico" />-->
+<link rel="stylesheet" type="text/css" media="screen" href="/tbb/styles/btfon.css">
+<!-- Start of additional stylesheet -->
+<link rel="stylesheet" type="text/css" media="screen" href="/tbb/styles/additions.css">
+<!-- End of additional stylesheet -->
+<!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/ie8-ie7.css" />
+<![endif]-->
+
+
+
+<script language="javascript" type="text/javascript">
+   window.onload = function() {
+    document.getElementById("search_field").focus();
+}
+</script>
+  <script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') + 
+    '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+    })();
+    </script>
+
+    <script type='text/javascript'>
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/16643028/wii_300x250', [300, 250], 'div-gpt-ad-1379692885281-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+    });
+  </script>
+  <script>
+ 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-45788524-2', 'btwifi.com');
+  ga('send', 'pageview');
+ 
+</script>
+</head>
+<body>
+<div class="googlebar">
+  <div id="header">
+    <div class="container_login">
+      <p>You&#8217;re now logged on to BT Wi-fi</p>
+    </div>
+  </div>
+
+  <div id="home" class="container_login">
+
+    <div class="content" id="index">
+
+      <div class="searcharea">
+
+          <img src="/tbb/images/btwifilogo.png" alt="You&#8217;re now logged in with BT Wi-fi" class="logo" title="Logged in with BT Wi-fi">
+
+          <div id="google_websearch">
+            <form name="google_search" class="google_search" action="https://search.bt.com/result" method="get" accept-charset="utf-8">
+              <input type="hidden" value="btfon" name="channel">
+              <input type="text" name="p" id="search_field" placeholder="Start your search here..." autocomplete="off" class="input noFocus" maxlength="100" size="70">
+              <input type="submit" value="" class="search" src="/tbb/imgages/btn_search.jpg" alt="Search" id="search_bttn" onclick="s_linkTrackVars=&#39;eVar19,prop50&#39;;s_eVar19=&#39;BT.com|Con|BT Infinity|Link|Find out more|Search&#39;;s_prop50=&#39;BT.com|Con|BT Infinity|Link|Find out more|Search&#39;;s_linkType=&#39;o&#39;;s_linkName=&#39;BT.com|Con|BT Infinity|Link|Find out more|Search&#39;;s_lnk=s_co(this);s_gs(&#39;btcomdev&#39;);">
+            </form>
+        </div>
+
+        <img src="/tbb/images/google.png" alt="google" class="glogo">
+
+      </div>
+
+      <div class="boxwrap">
+
+        <div class="column1">
+          <div class="offer">
+            <div class="inner"> 
+              <div class="bandp-iframe">
+               <div id='div-gpt-ad-1379692885281-0' style='width:300px; height:250px;'>
+                  <script type='text/javascript'>
+                    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1379692885281-0'); });
+                  </script>
+                </div>
+
+              </div> 
+            </div>
+          </div>
+        </div>
+
+        <div class="quicklinks">
+          <h1>Quick Links</h1>
+          <p><a href="http://www.productsandservices.bt.com/consumerProducts/displayTopic.do?topicId=25812" target="_blank">Download the BT Wi-fi app</a></p>
+          <p><a href="http://bt.custhelp.com/app/hub/c/346#h=ImNhdD0zNDZfMTIzOHxjb2w9MiI"  target="_blank">BT Wi-fi help</a></p>
+          <p><a href="http://www.productsandservices.bt.com/consumerProducts/displayTopic.do?topicId=34239"  target="_blank">Upgrade my broadband or TV</a></p>
+          <p><a href="http://home.bt.com/" target="_blank">Visit bt.com</a></p>
+          <p><a href="https://info.btopenzone.com:442/find" target="_blank">Find a hotspot</a></p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+	var sc_project=2984302;
+	var sc_invisible=1;
+	var sc_partition=32;
+	var sc_security="e77549bf";
+	var sc_https=1;
+	</script>
+<script type="text/javascript" src="https://secure.statcounter.com/counter/counter_xhtml.js"></script>
+<noscript>
+&lt;div class="statcounter"&gt;&lt;a class="statcounter" href="http://www.statcounter.com/"&gt;&lt;img class="statcounter" src="https://c33.statcounter.com/2984302/0/e77549bf/0/" alt="web tracker" /&gt;&lt;/a&gt;&lt;/div&gt;
+</noscript>
+<!-- End of StatCounter Code -->
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script>
+jQuery.noConflict();
+</script>
+
+<script type="text/javascript" src="../js/detectmobilebrowser.js"></script>
+
+<!--<script type="text/javascript" src="js/app.js"></script>
+<script defer type="text/javascript" src="https://www.btfon.com/js/overlibmws.js"></script>
+<script type="text/javascript" src="https://www.btfon.com/sf/prototype/js/prototype.js"></script>
+<script type="text/javascript" src="https://www.btfon.com/sf/prototype/js/scriptaculous.js"></script>
+-->
+<!-- Start of additional jscript -->
+<!-- End of additional jscript -->
+
+
+</body></html>
